@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/cdcb995457.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Trabajo con Media Querys</title>
+  </head>
+  <body>
+    <section class="grid-container">
+      <aside class="aside-menu">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#menu-options"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="menu-options">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Catálogo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </aside>
+
+      <nav class="nav-select">
+        <h2>Ordenar por</h2>
+        <select name="category" id="nav-category">
+          <option selected disabled>Ordenar por</option>
+          <option value="option-artist">Artista</option>
+          <option value="option-genre">Género</option>
+          <option value="option-priceMax">Precio min - max</option>
+          <option value="option-priceMax">Precio max - min</option>
+        </select>
+      </nav>
+
+      <article class="container">
+        <div class="card">
+          <img
+            src="assets/img/BlackSabbath.jpg"
+            alt="imagen portada Otoño, persona parada cerca de un árbol"
+          />
+          <div class="card-body">
+            <p class="card-title">Homónimo</p>
+            <p>Black Sabbath</p>
+            <p class="h4">$30.000</p>
+            <button type="button" class="btn btn-dark">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/DeepPurple.jpg"
+            alt="imagen portada rostros de hombres jóvenes, los integrantes del grupo"
+          />
+          <div class="card-body">
+            <p class="card-title">Machine Head</p>
+            <p>Deep Purple</p>
+            <p class="h4">$24.000</p>
+            <button type="button" class="btn btn-dark">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/JudasPriest.jpg"
+            alt="imagen portada mano sujetando una navaja"
+          />
+          <div class="card-body">
+            <p class="card-title">British Steel</p>
+            <p>Judas Priest</p>
+            <p class="h4">$22.000</p>
+            <button type="button" class="btn btn-dark">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/Pantera.jpg"
+            alt="imagen portada personas en un bar"
+          />
+          <div class="card-body">
+            <p class="card-title">Cowboys f. hell</p>
+            <p>Pantera</p>
+            <p class="h4">$15.000</p>
+            <button type="button" class="btn btn-dark">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/TheBeatles.jpg"
+            alt="imagen portada integrantes del grupo cruzando una calle"
+          />
+          <div class="card-body">
+            <p class="card-title">Abbey Road</p>
+            <p>The Beatles</p>
+            <p class="h4">$52.000</p>
+            <button type="button" class="btn btn-dark">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/baronRojo.jpg"
+            alt="imagen portada mano empuñada"
+          />
+          <div class="card-body">
+            <p class="card-title">Vol Brutal</p>
+            <p>Barón Rojo</p>
+            <p class="h4">$27.000</p>
+            <button type="button" class="btn btn-dark">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/VanHalen.jpg"
+            alt="imagen portada hombres jóvenes, integrantes del grupo en concierto"
+          />
+          <div class="card-body">
+            <p class="card-title">Van Halen</p>
+            <p>Van Halen</p>
+            <p class="h4">$24.500</p>
+            <button type="button" class="btn btn-dark">Ver más</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            src="assets/img/sepultura.jpeg"
+            alt="imagen portada dibujo de momia boca abajo"
+          />
+          <div class="card-body">
+            <p class="card-title">Chaos AD</p>
+            <p>Sepultura</p>
+            <p class="h4">$20.000</p>
+            <button type="button" class="btn btn-dark">Ver más</button>
+          </div>
+        </div>
+      </article>
+
+      <footer>
+        <div class="footer-elements">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+        </div>
+        <p>Todos los derechos reservados</p>
+      </footer>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
